@@ -8,9 +8,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="slider.css">
+    <style>
+        @media screen and (max-width: 900px) {
+            .huge-fill, .huge-outline {
+                font-size:7vw !important;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .huge-fill, .huge-outline {
+                font-size:10vw !important;
+            }
+        }
+    </style>
 </head>
 <body>
 <header>
+    <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <div class="hamburger">
+            <div class="bar"></div>
+        </div>
     <h1>EA</h1>
     <nav>
         <ul>
@@ -32,8 +49,6 @@
                 <a onclick="document.getElementById('about').scrollIntoView(true);" class="learn-more">Learn More</a>
             </div>
         </div>
-        <div class="grid-cell"></div>
-        <div class="grid-cell"></div>
     </div>
 </div>
 <div class="about-slider" id="about">
@@ -82,7 +97,7 @@
     </div>
 </div>
 <div class="articles" id="articles">
-    <h1 style="padding-top:10vh;">All Articles</h1>
+    <h1>All Articles</h1>
     <hr>
     <div class="grid">
         <div class="grid-cell">
